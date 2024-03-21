@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Practice Lab 2</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS -->
+    
+    <style>
+        /* Custom Navbar */
+        .navbar-custom {
+            background-color: #343a40 !important;
+        }
+        .navbar-custom .navbar-brand, .navbar-custom .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+        .navbar-custom .navbar-toggler-icon {
+            background-color: #fff !important;
+        }
+
+        /* Custom Buttons */
+        .btn-custom {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+
+        /* Custom Footer */
+        .footer-custom {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+        }
+        @media (max-width: 768px) {
+    /* CSS rules for smaller screens */
+    .hero-content {
+        margin-top: 30px;
+        text-align: center; /* Center align text on smaller screens */
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom">
+        <a class="navbar-brand" href="#">World Tour</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- Font Awesome icon for the menu -->
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+
+    <!-- Hero Section -->
+    <section class="hero mt-5"> <!-- Added mt-5 class for top margin -->
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <!-- Add a border to the image -->
+                    <img src="./tour.jpg" class="img-fluid border border-dark" alt="Hero Image">
+                </div>
+                <div class="col-md-6">
+                    <div class="hero-content">
+                        <h1>Welcome to World tour</h1>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sagittis mauris vitae velit interdum, sit amet congue magna faucibus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- Services Section -->
+    <section class="services mt-5" style="background-color: #ffffff;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service text-center bg-white p-4 border rounded"> <!-- Added border and rounded classes -->
+                        <i class="fas fa-cogs fa-3x mb-3"></i>
+                        <h3>Book Tickets</h3>
+                        <p>Description of the service goes here.</p>
+                    </div>
+                </div>
+                <!-- Add more columns for additional services -->
+                <div class="col-md-4">
+                    <div class="service text-center bg-white p-4 border rounded">
+                        <i class="fas fa-cogs fa-3x mb-3"></i>
+                        <h3>Inquiry</h3>
+                        <p>Description of another service goes here.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service text-center bg-white p-4 border rounded">
+                        <i class="fas fa-cogs fa-3x mb-3"></i>
+                        <h3>Other Services</h3>
+                        <p>Description of another service goes here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- Portfolio Section -->
+    <section class="portfolio mt-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="./ls.jpg" alt="Card image cap" height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Los Angeles</h5>
+                            <p class="card-text">Los Angeles (L.A.), officially the City of Los Angeles, is a city in Southern California, in the United States</p>
+                            <a href="#" class="btn btn-primary">More Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="./ny.webp" alt="Card image cap" height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">New York</h5>
+                            <p class="card-text">New York City, city and port located at the mouth of the Hudson River, southeastern New York state, northeastern U.S.</p>
+                            <a href="#" class="btn btn-primary">More Info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="./chicago.jpg" alt="Card image cap" height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Chicago</h5>
+                            <p class="card-text">Chicago covers an area of 60,000 hectares and sits 176 meters above sea level on the southwestern shore of Lake Michigan.</p>
+                            <a href="#" class="btn btn-primary">More Info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+<section class="contact mt-2"> <!-- Added mt-5 class for top margin -->
+    <div class="container">
+        <h2 class="text-center mb-5">Contact Us</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form style="border: 1px solid #ccc; padding: 20px;">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<br><br>
+<!-- Footer Section -->
+<footer class="footer-custom pt-4"> <!-- Added pt-5 class for top padding -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>&copy; 2024 Hardik Jagtap Lab-10. All rights reserved.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+              <!-- Optional social media icons -->
+              <a href="#" class="btn btn-outline-light me-3 mr-3"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="btn btn-outline-light me-3 mr-3"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="btn btn-outline-light me-3 mr-3"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="btn btn-outline-light me-3"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        
+        
+        
+    </div>
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
